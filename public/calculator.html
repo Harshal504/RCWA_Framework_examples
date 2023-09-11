@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Test_Multipage</title>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/blog/">
+    <!-- Bootstrap core CSS -->§
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <meta name="theme-color" content="#7952b3">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+      }
+      @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+      }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/5.0/examples/blog/blog.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand socket_nav_link" href="/" data-url="https://testmultipage.azurewebsites.net">Welcome to the testing website</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link socket_nav_link" href="/" data-url="https://testmultipage.azurewebsites.net">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link socket_nav_link" href="/quiz.html" data-url="https://testmultipage.azurewebsites.net/quiz.html">Quiz</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link socket_nav_link" href="/whiteboard.html" data-url="https://testmultipage.azurewebsites.net/whiteboard.html">Whiteboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link socket_nav_link" href="/calculator.html" data-url="https://testmultipage.azurewebsites.net/calculator.html">Calculator</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    
+    <table class="calculator" >
+          <tr>
+            <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+         
+            <!-- clearScreen() function clears all the values -->
+            <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+          </tr>
+          <tr>
+            <!-- display() function displays the value of clicked button -->
+            <td> <input type="button" value="1" onclick="display('1')" /> </td>
+            <td> <input type="button" value="2" onclick="display('2')" /> </td>
+            <td> <input type="button" value="3" onclick="display('3')" /> </td>
+            <td> <input type="button" value="/" onclick="display('/')" /> </td>
+          </tr>
+          <tr>
+            <td> <input type="button" value="4" onclick="display('4')" /> </td>
+            <td> <input type="button" value="5" onclick="display('5')" /> </td>
+            <td> <input type="button" value="6" onclick="display('6')" /> </td>
+            <td> <input type="button" value="-" onclick="display('-')" /> </td>
+          </tr>
+          <tr>
+            <td> <input type="button" value="7" onclick="display('7')" /> </td>
+            <td> <input type="button" value="8" onclick="display('8')" /> </td>
+            <td> <input type="button" value="9" onclick="display('9')" /> </td>
+            <td> <input type="button" value="+" onclick="display('+')" /> </td>
+          </tr>
+          <tr>
+            <td> <input type="button" value="." onclick="display('.')" /> </td>
+            <td> <input type="button" value="0" onclick="display('0')" /> </td>
+         
+            <!-- calculate() function evaluates the mathematical expression -->
+            <td> <input type="button" value="=" onclick="calculate()" id="btnn" /> </td>
+            <td> <input type="button" value="*" onclick="display('*')" /> </td>
+          </tr>
+    </table>
+        
+    <script type="text/javascript" src="script/script_calculator.js"></script>
+   
+    
+    
+  </body>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="rcwa_client.js"></script>
+</html>
